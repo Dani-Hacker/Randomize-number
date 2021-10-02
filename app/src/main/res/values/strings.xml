@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Randomizer</string>
+    <string name="displayer"> </string>
+    <string name="result"> |</string>
+    <string name="random_button">Random</string>
+</resources>

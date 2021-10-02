@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="263dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/random_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/displayer"
+        android:layout_width="409dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/displayer"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="225dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="123dp"
+        android:background="#005E1111"
+        android:backgroundTint="#00A53131"
+        android:text="@string/result"
+        android:textColor="#B32A2A"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/random_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayer" />
+
+    <SeekBar
+        android:id="@+id/progressor"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="112dp"
+        android:max="100"
+        android:progress="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/random_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
